@@ -406,6 +406,7 @@
 				9CDB0DC41A2D44290096E94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CDB0DC51A2D44290096E94E /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +415,7 @@
 				9CDB0DC71A2D44290096E94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
