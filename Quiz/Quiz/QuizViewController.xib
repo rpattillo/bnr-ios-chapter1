@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizViewController">
@@ -16,20 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-1X-k46">
-                    <rect key="frame" x="8" y="58" width="304" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="584" placeholderIntrinsicHeight="21" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-1X-k46">
+                    <rect key="frame" x="8" y="82" width="584" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9r-7X-9A2">
-                    <rect key="frame" x="8" y="344" width="304" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-7u-Xvm">
-                    <rect key="frame" x="8" y="373" width="304" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-7u-Xvm">
+                    <rect key="frame" x="8" y="526" width="584" height="30"/>
                     <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Show Answer">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,8 +32,8 @@
                         <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="DHB-8s-P3k"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-ZK-0vr">
-                    <rect key="frame" x="8" y="87" width="304" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-ZK-0vr">
+                    <rect key="frame" x="8" y="44" width="584" height="30"/>
                     <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Show Question">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,8 +42,28 @@
                         <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="uA3-6C-Ack"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9r-7X-9A2">
+                    <rect key="frame" x="8" y="497" width="584" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gv5-ZK-0vr" secondAttribute="trailing" constant="8" id="BVf-h2-WmE"/>
+                <constraint firstAttribute="bottom" secondItem="vWR-7u-Xvm" secondAttribute="bottom" constant="44" id="J8J-N7-JOd"/>
+                <constraint firstItem="vWR-7u-Xvm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="MoX-h2-JCx"/>
+                <constraint firstAttribute="trailing" secondItem="o9r-7X-9A2" secondAttribute="trailing" constant="8" id="OSX-0r-7Bk"/>
+                <constraint firstItem="o9r-7X-9A2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Q2a-cH-VoK"/>
+                <constraint firstItem="vWR-7u-Xvm" firstAttribute="top" secondItem="o9r-7X-9A2" secondAttribute="bottom" constant="8" id="WZ0-UB-OCZ"/>
+                <constraint firstItem="ed7-1X-k46" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="b4c-kz-0vu"/>
+                <constraint firstItem="gv5-ZK-0vr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="cWb-OD-vHL"/>
+                <constraint firstAttribute="trailing" secondItem="ed7-1X-k46" secondAttribute="trailing" constant="8" id="jut-4k-3ao"/>
+                <constraint firstAttribute="trailing" secondItem="vWR-7u-Xvm" secondAttribute="trailing" constant="8" id="nCO-T5-At4"/>
+                <constraint firstItem="gv5-ZK-0vr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="oMv-bw-RJE"/>
+                <constraint firstItem="ed7-1X-k46" firstAttribute="top" secondItem="gv5-ZK-0vr" secondAttribute="bottom" constant="8" id="wIW-sD-nxx"/>
+            </constraints>
             <point key="canvasLocation" x="829" y="483"/>
         </view>
     </objects>
